@@ -30,16 +30,20 @@
                     "Margaret Hamilton",
                 ];
 
+                // Definim o funcție care va fi apelată la click pe buton
+                function handleClick() {
+                    console.log("increment like count");
+                }
+
                 return (
                     <div>
                         <Header title="Develop. Preview. Ship." />
                         <ul>
-                            {
-                                // Afișăm fiecare element din listă ca text a unui element li
-                                names.map((name) => (
+                            {names.map((name) => (
                                 <li key={name}>{name}</li>
                             ))}
                         </ul>
+                        <button onClick={handleClick}>Like</button>
                     </div>
                 );
             }
