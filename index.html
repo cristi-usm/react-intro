@@ -22,10 +22,19 @@
                 return <h1>Develop. Preview. Ship.</h1>;
             }
 
+            function HomePage() {
+                return (
+                    <div>
+                        {/*Imbricăm componenta Header */}
+                        <Header />
+                    </div>
+                );
+            }
+
             // Creăm o rădăcină React
             const root = ReactDOM.createRoot(app);
             // Randăm un element React în rădăcină
-            root.render(<Header />);
+            root.render(<HomePage />);
         </script>
     </body>
 </html>
