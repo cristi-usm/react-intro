@@ -12,13 +12,20 @@
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <!-- Includem Babel pentru a transpila JSX-ul în JavaScript -->
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
         <script type="text/jsx">
             // Obținem referința la elementul cu id-ul "app"
             const app = document.getElementById("app");
+
+            // Definim un component React
+            function Header() {
+                return <h1>Develop. Preview. Ship.</h1>;
+            }
+
             // Creăm o rădăcină React
             const root = ReactDOM.createRoot(app);
             // Randăm un element React în rădăcină
-            root.render(<h1>Develop. Preview. Ship.</h1>);
+            root.render(<Header />);
         </script>
     </body>
 </html>
