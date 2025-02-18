@@ -7,22 +7,18 @@
     </head>
     <body>
         <div id="app"></div>
-        <script type="text/javascript">
-            // Selectăm elementul div cu id-ul 'app'
+        <!-- Includem React și ReactDOM -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <!-- Includem Babel pentru a transpila JSX-ul în JavaScript -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/jsx">
+            // Obținem referința la elementul cu id-ul "app"
             const app = document.getElementById("app");
-
-            // Creăm un element h1
-            const header = document.createElement("h1");
-
-            // Creăm un nod text cu valoarea "Develop. Preview. Ship."
-            const text = "Develop. Preview. Ship.";
-            const headerContent = document.createTextNode(text);
-
-            // Adăugăm nodul text în elementul h1
-            header.appendChild(headerContent);
-
-            // Adăugăm elementul h1 în div-ul cu id-ul 'app'
-            app.appendChild(header);
+            // Creăm o rădăcină React
+            const root = ReactDOM.createRoot(app);
+            // Randăm un element React în rădăcină
+            root.render(<h1>Develop. Preview. Ship.</h1>);
         </script>
     </body>
 </html>
