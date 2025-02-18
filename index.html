@@ -22,11 +22,24 @@
                 return <h1>{title ? title : "Default title"}</h1>;
             }
 
+            // Definim un component React cu o listă de nume
             function HomePage() {
+                const names = [
+                    "Ada Lovelace",
+                    "Grace Hopper",
+                    "Margaret Hamilton",
+                ];
+
                 return (
                     <div>
-                        <Header title="React" />
-                        <Header title="A new title" />
+                        <Header title="Develop. Preview. Ship." />
+                        <ul>
+                            {
+                                // Afișăm fiecare element din listă ca text a unui element li
+                                names.map((name) => (
+                                <li key={name}>{name}</li>
+                            ))}
+                        </ul>
                     </div>
                 );
             }
