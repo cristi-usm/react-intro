@@ -32,8 +32,12 @@
 
                 // Definim o funcție care va fi apelată la click pe buton
                 function handleClick() {
-                    console.log("increment like count");
+                    // Incrementăm numărul de like-uri
+                    setLikes(likes + 1);
                 }
+
+                // Definim un hook de state pentru numărul de like-uri
+                const [likes, setLikes] = React.useState(0);
 
                 return (
                     <div>
@@ -43,7 +47,7 @@
                                 <li key={name}>{name}</li>
                             ))}
                         </ul>
-                        <button onClick={handleClick}>Like</button>
+                        <button onClick={handleClick}>Like({likes})</button>
                     </div>
                 );
             }
