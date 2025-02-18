@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagina Demonstrativa</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript">
+            // Selectăm elementul div cu id-ul 'app'
+            const app = document.getElementById("app");
+
+            // Creăm un element h1
+            const header = document.createElement("h1");
+
+            // Creăm un nod text cu valoarea "Develop. Preview. Ship."
+            const text = "Develop. Preview. Ship.";
+            const headerContent = document.createTextNode(text);
+
+            // Adăugăm nodul text în elementul h1
+            header.appendChild(headerContent);
+
+            // Adăugăm elementul h1 în div-ul cu id-ul 'app'
+            app.appendChild(header);
+        </script>
+    </body>
+</html>
