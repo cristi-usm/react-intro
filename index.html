@@ -17,16 +17,16 @@
             // Obținem referința la elementul cu id-ul "app"
             const app = document.getElementById("app");
 
-            // Definim un component React
-            function Header() {
-                return <h1>Develop. Preview. Ship.</h1>;
+            // Definim un component React cu props
+            function Header({ title }) {
+                return <h1>{title ? title : "Default title"}</h1>;
             }
 
             function HomePage() {
                 return (
                     <div>
-                        {/*Imbricăm componenta Header */}
-                        <Header />
+                        <Header title="React" />
+                        <Header title="A new title" />
                     </div>
                 );
             }
