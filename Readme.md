@@ -64,7 +64,7 @@ Pentru a utiliza **React** într-o formă foarte simplă într-un proiect nou cr
 
 În loc să manipulăm direct **DOM-ul** cu **JavaScript** simplu, putem elimina metodele **DOM** pe care le-am utilizat anterior și să adăugăm `ReactDOM.createRoot()`, metodă de a obține un anumit element **DOM** și de a crea o rădăcină în care să vă afișăm componente **React**. Apoi, putem adăuga `root.render()`, metoda de a randa codul **React** în **DOM**. Acest lucru va spune **React** să randeze titlul nostru `<h1>` în elementul nostru cu id-ul `#app`.
 # Ce este JSX?
-**JSX** este o extensie de sintaxă pentru **JavaScript** care ne permite să descriem interfața într-o sintaxă familiară asemănătoare **HTML** ([exemple de transformare JSX->JS](@babel/plugin-transform-react-jsx)). Lucrul frumos despre **JSX** este că, în afară de respectarea a trei reguli **JSX**, nu trebuie să învățăm simboluri sau sintaxă noi în afara de **HTML** și **JavaScript**.
+**JSX** este o extensie de sintaxă pentru **JavaScript** care ne permite să descriem interfața într-o sintaxă familiară asemănătoare **HTML** ([exemple de transformare JSX->JS](https://babeljs.io/docs/babel-plugin-transform-react-jsx)). Lucrul frumos despre **JSX** este că, în afară de respectarea a trei reguli **JSX**, nu trebuie să învățăm simboluri sau sintaxă noi în afara de **HTML** și **JavaScript**.
 
 Browserele implicit nu înțeleg **JSX**, așa că avem nevoie de un compilator/transpilator **JavaScript**, cum ar fi **Babel**, pentru a transforma codul **JSX** în **JavaScript** obișnuit.
 ### Cele 3 reguli JSX despre care se menționa mai sus sunt:
